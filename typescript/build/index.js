@@ -1,6 +1,49 @@
 "use strict";
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const car_1 = require("./car");
-const message = 'hello world';
-const car = new car_1.Car('Nissan GTR');
-console.log(message, car.getName());
+const readline_1 = __importDefault(require("readline"));
+const Menu_1 = require("./Menu");
+const rl = readline_1.default.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+const keyboardRead = (title) => new Promise((resolve) => {
+    rl.question(`${title}\n`, (value) => {
+        resolve(Number(value));
+    });
+});
+const chooseMethod = (index) => {
+    const method = Menu_1.Menu[index - 1];
+    if (!method) {
+        console.log('Opción inexistente');
+        return () => { };
+    }
+    return method.method;
+};
+const Main = () => __awaiter(void 0, void 0, void 0, function* () {
+    let exit = false;
+    while (!exit) {
+        console.log('\n\n------Menu------');
+        Menu_1.Menu.forEach((item, index) => console.log(`${index + 1}. ${item.name}`));
+        console.log('0. Exit');
+        const selectedOption = yield keyboardRead('Selecciona tu opción (solo el número)');
+        exit = selectedOption === 0;
+        if (!exit) {
+            chooseMethod(selectedOption)();
+        }
+    }
+    console.log('Saliendo');
+    rl.close();
+});
+Main();
