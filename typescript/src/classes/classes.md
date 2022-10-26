@@ -7,5 +7,5 @@ Las clases principalmente se componen de:
   * Métodos --> Los métodos nos permiten que nuestra instancia realice acciones, normalmente haciendo uso de las propiedades espécificas de su clase. Esto permite la separacion de responsabilidades. Ejemplo: el método `sayHello()`  de una clase `Person`.
 
 ## Ejercicios
- * Grupo 1: Crear una clase Developer.
- * Grupo 2: Crear una clase Car.
+ * Grupo 1: Crear una clase **Developer**.
+ * Grupo 2: Crear una clase **Car**.

@@ -1,5 +1,6 @@
 import { Iphone } from './classes/Iphone';
 import { herencia } from './inheritance'
+import { interfaces } from './interfaces'
 export const Menu = [
   {
     name: 'Clases',
@@ -12,5 +13,9 @@ export const Menu = [
   {
     name: 'Herencia',
     method: herencia
+  },
+  {
+    name: 'Interfaz',
+    method: interfaces
   }
 ]
