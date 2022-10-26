@@ -1,4 +1,5 @@
 import { Iphone } from './classes/Iphone';
+import { herencia } from './inheritance'
 export const Menu = [
   {
     name: 'Clases',
@@ -7,5 +8,9 @@ export const Menu = [
       myIphone.playGame();
       console.log( 'battery status', myIphone.bateryCapacity );
     }
+  },
+  {
+    name: 'Herencia',
+    method: herencia
   }
 ]
