@@ -1,7 +1,7 @@
 import { Iphone } from './classes/Iphone';
 import { herencia } from './inheritance'
 import { interfaces } from './interfaces'
-import { ioc1 } from './ioc';
+import { ioc1, ioc2 } from './ioc';
 
 export const Menu = [
   {
@@ -23,5 +23,8 @@ export const Menu = [
   {
     name: 'IOC 1',
     method: ioc1
+  }, {
+    name: 'IOC 2',
+    method: ioc2
   }
 ]

@@ -4,6 +4,7 @@
 Existen varias formas de aplicar este concepto:
 
 * Paso por parámetro --> consiste en pasarle la dependencia directamente como un parametro de nuestra clase / funcion.
+* Uso de un inversor de dependencias independiente.
 
 ## Ejercicio
 * Grupo 1: Crear la dependencia **ProgrammingStyle** para la clase **Developer**.

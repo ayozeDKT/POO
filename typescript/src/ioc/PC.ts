@@ -1,9 +1,10 @@
-import { Calculator } from './Calculator';
+import { getDependency } from './ioc';
+import { CalculatorI } from './dependencies/Calculator.interface';
 
 export class PC {
-  calculator: Calculator;
+  calculator: CalculatorI;
 
-  constructor( calculator: Calculator ) {
+  constructor( calculator: CalculatorI = getDependency( 'calculator' ) ) {
     this.calculator = calculator;
   }
 }

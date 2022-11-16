@@ -1,4 +1,6 @@
-export class Calculator {
+import { CalculatorI } from './Calculator.interface';
+
+export class ScientificCalculator implements CalculatorI {
   add = ( a: number, b: number ): number => a + b;
   substract = ( a: number, b: number ): number => a - b;
   multiply = ( a: number, b: number ): number => a * b;
