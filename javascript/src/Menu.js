@@ -1,5 +1,5 @@
 import { clases } from "./classes/index.js";
-// import { herencia } from './inheritance'
+import { herencia } from "./inheritance/index.js";
 // import { interfaces } from './interfaces'
 // import { ioc1, ioc2 } from './ioc';
 
@@ -8,10 +8,10 @@ export const Menu = [
     name: "Clases",
     method: clases,
   },
-  // {
-  //   name: 'Herencia',
-  //   method: herencia
-  // },
+  {
+    name: "Herencia",
+    method: herencia,
+  },
   // {
   //   name: 'Interfaz',
   //   method: interfaces
