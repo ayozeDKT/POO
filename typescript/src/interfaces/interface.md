@@ -6,3 +6,4 @@ Dependiendo de las capacidades del lenguaje las interfaces pueden ser más o men
 ## Ejercicios
 * Grupo 1: Crea una interfaz que deba cumplir la clase **Person**.
 * Grupo 2: Crea una interfaz que deba cumplir la clase **Vehicle**.
+* Grupo 3: Crea una interfaz que deba cumplir la clase **Bike**.

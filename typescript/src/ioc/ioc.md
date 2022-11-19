@@ -9,3 +9,4 @@ Existen varias formas de aplicar este concepto:
 ## Ejercicio
 * Grupo 1: Crear la dependencia **ProgrammingStyle** para la clase **Developer**.
 * Grupo 2: Crear la dependecia **EntertaimentSystem** para la calse **Car**.
+* Grupo 3: Crear la dependencia **StockManager** para la clase **Product**.

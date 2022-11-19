@@ -9,3 +9,4 @@ Las clases principalmente se componen de:
 ## Ejercicios
  * Grupo 1: Crear una clase **Developer**.
  * Grupo 2: Crear una clase **Car**.
+ * Grupo 3: Crear una clase **Product**;
